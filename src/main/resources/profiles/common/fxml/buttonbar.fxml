@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="60.0" prefWidth="265.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.skynet.javafx.controller.ButtonBarController">
+   <children>
+      <Button fx:id="cancelButton" layoutX="133.0" layoutY="15.0" mnemonicParsing="false" prefWidth="80.0" text="Cancel" />
+      <Button fx:id="acceptButton" layoutX="36.0" layoutY="15.0" mnemonicParsing="false" prefWidth="80.0" text="Accept" />
+   </children>
+</Pane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.skynet.javafx.controller.SetupController">
+   <children>
+      <Pane layoutX="3.0" layoutY="361.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="60.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+	        <fx:include fx:id="buttonbar" source="buttonbar.fxml" />
+         </children>
+      </Pane>
+      <TabPane layoutX="0" layoutY="0" prefHeight="345.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Basic info">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="574.0">
+                     <children>
+                        <Label layoutX="86.0" layoutY="35.0" text="Name:" />
+                        <TextField fx:id="textName" layoutX="160.0" layoutY="30.0" prefHeight="31.0" prefWidth="340.0" />
+                        <Label layoutX="82.0" layoutY="85.0" text="Address:" />
+                        <TextField fx:id="textAddress" layoutX="160.0" layoutY="80.0" prefHeight="31.0" prefWidth="340.0" />
+                        <Label layoutX="110.0" layoutY="135.0" text="ID:" />
+                        <TextField fx:id="textId" layoutX="160.0" layoutY="130.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="More">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                     	<Label layoutX="86.0" layoutY="35.0" text="TODO: add more fields here" />
+                     </children>
+              </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
