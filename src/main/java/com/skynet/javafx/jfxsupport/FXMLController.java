@@ -1,4 +1,4 @@
-package com.skynet.javafx.utils.jfxsupport;
+package com.skynet.javafx.jfxsupport;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

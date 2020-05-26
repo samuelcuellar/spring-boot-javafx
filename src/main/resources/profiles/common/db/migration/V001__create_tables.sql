@@ -12,3 +12,12 @@ create table menuitem (
   last_update datetime,
   PRIMARY KEY (id)
 );
+
+create table customer (
+  id bigint auto_increment not null,
+  firstname varchar(255),
+  lastname varchar(255),
+  address varchar(255),
+  email varchar(255),
+  PRIMARY KEY (id)
+);

@@ -36,18 +36,18 @@
 			<artifactId>h2</artifactId>
 		</dependency>
 		<dependency>
-		    <groupId>org.flywaydb</groupId>
-		    <artifactId>flyway-core</artifactId>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-fxml</artifactId>
-			<version>11.0.2</version>
+			<version>14</version>
 		</dependency>
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-controls</artifactId>
-			<version>13</version>
+			<version>14</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>

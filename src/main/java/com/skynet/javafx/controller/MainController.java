@@ -1,24 +1,17 @@
 package com.skynet.javafx.controller;
 
 import java.util.List;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import com.skynet.javafx.config.PropertiesConfig;
+import com.skynet.javafx.jfxsupport.FXMLController;
 import com.skynet.javafx.service.FrameService;
 import com.skynet.javafx.service.MenuItemService;
-import com.skynet.javafx.utils.jfxsupport.AbstractFxmlView;
-import com.skynet.javafx.utils.jfxsupport.FXMLController;
 import com.skynet.javafx.views.FrameGridView;
-import com.skynet.javafx.views.SetupView;
 import com.skynet.javafx.views.def.FrameGridDef;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.MenuItem;
 import javafx.scene.control.MultipleSelectionModel;
 import javafx.scene.control.SplitPane;
 import javafx.scene.control.Tab;
@@ -31,17 +24,12 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.VBox;
-import javafx.stage.Modality;
 import javafx.stage.Screen;
-import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 @FXMLController
 public class MainController {
 
 	private static String ADDITIONAL_TAB_TITLE = "     ";
-
-	private static final Logger logger = LoggerFactory.getLogger(MainController.class);
 
 	@Autowired
 	private ApplicationContext context;
@@ -57,9 +45,6 @@ public class MainController {
 
 	@FXML
 	private SplitPane mainSplitPanel;
-
-	@FXML
-	private MenuItem menuItemSetup;
 
 	@FXML
 	private TabPane tabPane;
@@ -97,22 +82,6 @@ public class MainController {
 				}
 			});
 		}
-
-		menuItemSetup.setOnAction((handler) -> {
-			logger.debug("handler menuItemSetup");
-			AbstractFxmlView fxmlView = (AbstractFxmlView) context.getBean(SetupView.class);
-			Stage stage = new Stage();
-			Scene scene = new Scene(fxmlView.getView());
-			stage.setScene(scene);
-			stage.initModality(Modality.APPLICATION_MODAL);
-			stage.initStyle(StageStyle.UTILITY);
-			stage.setResizable(false);
-			stage.setTitle("Configuración");
-			stage.setOnHidden((event) -> {
-				stage.close();
-			});
-			stage.show();
-		});
 
 	}
 

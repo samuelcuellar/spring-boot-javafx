@@ -1,4 +1,4 @@
-package com.skynet.javafx.utils.jfxsupport;
+package com.skynet.javafx.jfxsupport;
 
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;

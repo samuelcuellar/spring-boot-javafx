@@ -2,7 +2,7 @@ package com.skynet.javafx.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.skynet.javafx.utils.jfxsupport.FXMLController;
+import com.skynet.javafx.jfxsupport.FXMLController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.stage.Window;

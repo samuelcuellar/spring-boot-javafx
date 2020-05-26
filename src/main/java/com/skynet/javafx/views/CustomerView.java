@@ -4,8 +4,8 @@ import org.springframework.context.annotation.Scope;
 import com.skynet.javafx.jfxsupport.AbstractFxmlView;
 import com.skynet.javafx.jfxsupport.FXMLView;
 
-@FXMLView("/fxml/framegrid.fxml")
+@FXMLView("/fxml/customer.fxml")
 @Scope("prototype")
-public class FrameGridView extends AbstractFxmlView {
+public class CustomerView extends AbstractFxmlView {
 
 }

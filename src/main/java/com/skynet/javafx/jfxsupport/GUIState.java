@@ -1,4 +1,4 @@
-package com.skynet.javafx.utils.jfxsupport;
+package com.skynet.javafx.jfxsupport;
 
 import javafx.application.HostServices;
 import javafx.scene.Scene;
